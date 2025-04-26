@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-primary: #0000FF;
+    --color-secondary: #FFFFFF;
+    --color-primary-text: #ADD8E6;
+    --color-heading-text: #000000;
+    --font-primary: "Rubik", sans-serif;
+}
+
+
+@layer{
+    .section-container{
+        @apply max-w-[1440px] container mx-auto px-4 py-28;
+
+    }
+
+}
+
+.swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    background: #DDE0E4;
+    opacity: 1;
+    margin: 0 5px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--color-primary) !important;
+    opacity: 1 !important;
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    content: "" !important;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    content: "" !important;
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nord 3 vpn</title>
+    <!----- tailwind css link-->
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xj1z2z4c5e5b5e5b5e5b5e5b5e5b5b5b" crossorigin="anonymous">  
+    <link rel="stylesheet" href="./style.css">
+    <!---------swiper js connection-->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!----AOS ANIMATION-------->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body class="font-primary">
+       <!----header section-->
+      <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50" id="about">
+        <nav class="max-w-[1440px] container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-----logo-->
+        <a href="#">
+            <div class="text-2xl font-bold flex items-center gap-2">
+                <img src="./images/logo.png" alt="logo" class="h-8">
+                <span class="text-primary" style="color: blue;">Nord3 VPN</span>
+            </div>
+
+        </a>
+           
+           <!------menu item -->
+           <ul class="hidden md:flex space-x-8">
+            <li>
+                <a href="#about" class="hover:text-blue-600">About</a>
+          </li>
+          <li>
+            <a href="#features" class="hover:text-blue-600">Features</a>
+      </li>
+      <li>
+        <a href="#pricing" class="hover:text-blue-600">Pricing</a>
+  </li>
+  <li>
+    <a href="#Teestimonals" class="hover:text-blue-600">Testimonals</a>
+</li>
+<li>
+    <a href="#Suscribe" class="hover:text-blue-600">Help</a>
+</li>
+           </ul> 
+        <!-------Auth buttons-->
+           <div class="space-x-4">
+        <button class="text-gray-600 hover:text-primary hidden sm:inline-flex">Sign In</button>
+        <button class="bg-blue-500 text-white hover:bg-blue-600 px-4 py-2 rounded-full cursor-pointer">Sign Up</button>
+           </div>
+        </nav>
+      </header>
+
+      <!-----Hero section -->
+      <section id="home" class="max-w-[1440px] container mx-auto px-4 py-28 flex flex-col md:flex-row items-center gap-12">
+        <!------left content-->
+        <div class="md:w-1/2 mb-8 md:mb-0 space-y-8"  data-aos="fade-right">
+            <h1 class="lg:text-6xl md:5xl text-4xl font-bold text-heading-text landing-light">Unlock a Safer Internet Experience with<br class="lg:block hidden"> Nord3 VPN</h1>
+            <p class="text-primary-text text-lg leading-relaxed max-w-xl">
+                "Experience the internet without borders or boundaries. Our VPN provides a secure, fast, and reliable connection to unlock global content, protect your online identity, and shield your data from hackers and surveillance."
+            </p>
+            <button class="bg-blue-500 text-white px-12 py-4 rounded-lg hover:bg-blue-600 shadow-lg hover:shadow transition duration-300 text-lg font-medium cursor-pointer">
+                Get Started
+            </button>
+        </div>
+        <!-------right content -->
+        <div class="md:w-1/2"  data-aos="fade-left">
+            <img src="./images/6542298.jpg" alt="banner image" class="w-full">
+        </div>
+        
+
+      </section>
+
+      <!-------statistics section-->
+    <section class="section-container bg-gray-100 py-16"  data-aos="fade-up">
+        <div class="max-w-[1440px] container mx-auto px-4 text-center" id="About">
+            <h2 class="text-4xl font-bold text-blue-800 mb-6">Our Achievements</h2>
+            <p class="text-lg text-gray-700">Discover why thousands of users trust Nord3 VPN for their online security and privacy.</p>
+        </div>
+
+        <div class="bg-gray-100 rounded-xl shadow-lg p-8 py-16">
+            <div class="flex flex-col md:flex-row justify-around items-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                <!-----users stats-->
+                <div class="flex items-center gap-6 px-16 py-8 md:py-0">
+                    <div class="p-5 shrink-8 bg-primary/65 rounded-full">
+                        <img src="./images/user.png" alt="user icon" class="h-12 w-12">
+                    </div>
+                    <div>
+                        <span class="text-3xl font-bold text-gray-900 number" data-value="10000">0</h3>
+                        <p class="text-primary-text">Users</p>
+                    </div>
+                </div>
+
+                <!------location stats---->
+                <div class="flex items-center gap-6 px-12 py-6 md:py-0">
+                    <div class="p-5 shrink-8 bg-primary/65 rounded-full">
+                        <img src="./images/location.png" alt="location icon" class="h-12 w-12">
+                    </div>
+                    <div>
+                        <span class="text-3xl font-bold text-gray-900 number" data-value="1000">0</h3>
+                        <p class="text-primary-text">Locations</p>
+                    </div>
+                </div>
+
+                <!--------server stats----->
+                <div class="flex items-center gap-6 px-12 py-6 md:py-0">
+                    <div class="p-5 shrink-8 bg-primary/65 rounded-full">
+                        <img src="./images/storage.png" alt="server icon" class="h-12 w-12">
+                    </div>
+                    <div>
+                        <span class="text-3xl font-bold text-gray-900 number" data-value="500">0</h3>
+                        <p class="text-primary-text">Servers</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+       </section>
+
+       <!------features section--------->
+       <section class="section-container" id="features">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-12">
+            <!------left content-->
+            <div class="md:w-1/2" data-aos="fade-left">
+                <img src="./images/password-lock-key.png" alt="features image" class="w-3/5 mx-auto">
+            </div>
+
+            <!-------right content------->
+            <div class="md:w-1/2 space-y-8" data-aos="fade-right">
+                <h2 class="text-heading-text text-4xl font-bold leading-tight">
+                    Explore the Features<br> That Make Us Stand Out
+                </h2>
+                <p>
+                    "Nord3 VPN offers a range of features designed to enhance your online experience. From lightning-fast speeds to robust security protocols, we ensure that your data is protected while you enjoy seamless browsing."
+                </p>
+
+                <!------Features list---------->
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <div>
+                            <img src="./images/green.png" alt="tick sign" class="h-6 w-6">
+
+                        </div>
+                        <span>Powerfull online protection.</span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="flex items-center gap-3">
+                        <div>
+
+                            <img src="./images/green.png" alt="tick sign" class="h-6 w-6">
+
+                        </div>
+                        <span>Internet without borders.</span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="flex items-center gap-3">
+                        <div>
+
+                            <img src="./images/green.png" alt="tick sign" class="h-6 w-6">
+
+                        </div>
+                        <span>Access to global content at your fingertips.</span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="flex items-center gap-3">
+                        <div>
+                            <img src="./images/green.png" alt="tick sign" class="h-6 w-6">
+
+                        </div>
+                        <span>Secure and reliable connections.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+          <!-------pricing section-------->
+          <section class="bg-gray-50" id="pricing">
+        <div class="section-container">
+                <!------section header-------->
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-heading-text mb-4">Choose Your Plan</h2>
+                    <p class="text-primary-text text-lg">Select a plan that suits your needs and enjoy a secure online experience.</p>
+                </div>
+                <!----pricing cards container -------->
+                <div class="grid md:grid-cols-3 grid-cols-1 max-w-6xl mx-auto gap-8">
+                    <!-----free plan ------>
+                    <div class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-blue-500 transition duration-300 hover:scale-110" data-aos="fade-in">
+                        <img src="./images/box.png" alt="gift box" class="w-32 mb-8">
+                        <h3 class="text-2xl font-bold mb-8">
+                            Free Plans
+                        </h3>
+
+                            <!-------feature list------------>
+                            <ul class="space-y-4 mb-8 flex-grow">
+                                <li class="flex items-center gap-2">
+                                    <img src="./images/green.png" alt="" class="size-5">
+                                    <span>
+                                        No Traffic Logs 
+                                    </span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img src="./images/green.png" alt="" class="size-5">
+                                    <span>
+                                        Encrypted connections
+                                    </span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img src="./images/green.png" alt="" class="size-5">
+                                    <span>
+                                        Often supported by ads or might log user data.
+                                    </span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img src="./images/green.png" alt="" class="size-5">
+                                    <span>
+                                        Limited features, fewer servers, and data caps.
+                                    </span>
+                                </li>
+                            </ul>
+
+                            <!------price button ----->
+                            <div class="text-center space-y-4">
+                                <div>
+                                    <span class="font-bold">Free</span>
+                                </div>
+                                <button class="border-2 border-primary text-primary px-16 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300">
+                                    Select
+                                </button>
+                                </div>
+                            </div>
+    
+                            <!------Standard plans--------->
+                            <div class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 hover:scale-110"  data-aos="fade-in">
+                                <img src="./images/box.png" alt="gift box" class="w-32 mb-8">
+                                <h3 class="text-2xl font-bold mb-8">
+                                    Standard Plans
+                                </h3>
+        
+                                    <!-------feature list------------>
+                                    <ul class="space-y-4 mb-8 flex-grow">
+                                        <li class="flex items-center gap-2">
+                                            <img src="./images/green.png" alt="" class="size-5">
+                                            <span>
+                                                No Traffic Logs 
+                                            </span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <img src="./images/green.png" alt="" class="size-5">
+                                            <span>
+                                                Encrypted connections
+                                            </span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <img src="./images/green.png" alt="" class="size-5">
+                                            <span>
+                                                Often supported by ads or might log user data.
+                                            </span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <img src="./images/green.png" alt="" class="size-5">
+                                            <span>
+                                                Limited features, fewer servers, and data caps.
+                                            </span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <img src="./images/green.png" alt="" class="size-5">
+                                            <span>
+                                                Offers full features, including encryption, customer support, and multiple server locations.
+                                            </span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <img src="./images/green.png" alt="" class="size-5">
+                                            <span>
+                                                Offers full access to all features and priority customer support.
+                                            </span>
+                                        </li>
+                                    </ul>
+        
+                                    <!------price button ----->
+                                    <div class="text-center space-y-4">
+                                        <div class="font-bold text-black-500">
+                                            Monthly: ~$11.95
+                                        </div>
+                                        <button class="border-2 border-primary text-primary px-16 py-2 rounded-full hover:bg-red-600 hover:text-white transition duration-300">
+                                            Select
+                                        </button>
+                                    </div>        
+                    </div>
+
+                    <!------Premium plans--------->
+                    <div class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-blue-500 transition duration-300 hover:scale-110" data-aos="fade-in">
+                        <img src="./images/box.png" alt="gift box" class="w-32 mb-8">
+                        <h3 class="text-2xl font-bold mb-8">
+                            Premium plans
+                        </h3>
+
+                            <!-------feature list------------>
+                            <ul class="space-y-4 mb-8 flex-grow">
+                                <li class="flex items-center gap-2">
+                                    <img src="./images/green.png" alt="" class="size-5">
+                                    <span>
+                                        No Traffic Logs 
+                                    </span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img src="./images/green.png" alt="" class="size-5">
+                                    <span>
+                                        Encrypted connections
+                                    </span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img src="./images/green.png" alt="" class="size-5">
+                                    <span>
+                                        Often supported by ads or might log user data.
+                                    </span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img src="./images/green.png" alt="" class="size-5">
+                                    <span>
+                                        Limited features, fewer servers, and data caps.
+                                    </span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img src="./images/green.png" alt="" class="size-5">
+                                    <span>
+                                        Tailored for organizations needing multiple VPN accounts for employees.
+                                    </span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img src="./images/green.png" alt="" class="size-5">
+                                    <span>
+                                        Allows several family members to use the service simultaneously.
+                                    </span>
+                                </li>
+                            </ul>
+
+                            <!------price button ----->
+                            <div class="text-center space-y-4">
+                                <div>
+                                    <span class="font-bold"> Annual: ~$3.99/month (billed annually at ~$47.75)</span>
+                                </div>
+                                <button class="bg-blue-600 text-white px-16 py-2 rounded-full hover:bg-blue-700 transition duration-300">
+                                    Select
+                                </button>
+                                </div>
+                            </div>
+                </div>    
+        </div>
+          </section>
+
+          <!-------Global Network Section -------->
+          <section class="section-container mb-12">
+            <!------Section header---------->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-heading-text mb-6 md:w-1/2 mx-auto text-center">
+                    Nord3 Global Network of fast VPN
+                </h2>
+                <p class="text-primary-text"></p>
+                    "With servers strategically located across the globe, Nord3 VPN ensures lightning-fast connections and access to content from any region. Experience seamless browsing, streaming, and downloading with our robust global network."
+                </p>
+
+          <div class="mb-10">
+            <img src="./images/map.png" alt="map image" class="w-full">
+          <!-----sponsored logos-------->
+          <div class="flex flex-wrap justify-center gap-12 opacity-75 p-4">
+            <img src="./images/netflix.png" alt="sponsored logos" class="h-12 transition duration-300 mx-auto mb-8">
+            <img src="./images/reddit.png" alt="sponsored logos" class="h-16 transition duration-300 mx-auto mb-8">
+            <img src="./images/instagram_2111463.png" alt="sponsored logos" class="h-12 transition duration-300 mx-auto mb-8">
+            <img src="./images/Untitled-1.png" alt="sponsored logos" class="h-18 mx-auto mb-8 opacity-100 hover:opacity-100 transition duration-300">
+            <img src="./images/spotify.png" alt="sponsored logos" class="h-12 transition duration-300 mx-auto mb-8">
+            <img src="./images/amazon.png" alt="sponsored logos" class="h-12 transition duration-300 mx-auto mb-8">
+          </div>
+        </div>
+        </div>
+        </section>
+        <style>
+            /* Adjust the container position */
+            .section-container {
+                margin-top: -50px; /* Bring the container up */
+            }
+        </style>
+        <!-----testimonal section------->
+        <section class="section-container" id="Teestimonals">
+            <!--------section header----->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-heading-text mb-4 md:w-1/3 mx-auto">
+                    Trusted by Thousand of Happy Customer Around the World
+                </h2>
+                <p class="text-primary-text text-lg leading-relaxed max-w-2xl mx-auto">
+                    Join the Nord3 VPN community and experience the difference. Our users rave about our fast speeds, reliable connections, and top-notch customer support. Discover why we are the preferred choice for online security.
+                </p>
+            </div>
+
+
+            <!-- Testimonial Slider -->  
+<div class="swiper testimonialSwiper">  
+    <!-- Additional required wrapper -->  
+    <div class="swiper-wrapper">  
+        <!-- Slides will be generated dynamically here -->  
+    </div>  
+
+    <!-- Navigation controls -->  
+    <div class="flex justify-between items-center mt-10">  
+        <!-- Pagination dots -->  
+        <div class="swiper-pagination"></div>  
+
+        </div>  
+    </div>  
+</div>  
+</section>
+
+<!------subscribe section-------------->
+<section class="section-container" id="Suscribe">
+    <div class="bg-white rounded-xl shadow-lg lg:p-16 md:p-12 p-8 hover:shadow-2xl transition-all duration-500">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            <!-----left content-->
+            <div class="md:w-1/2 space-y-8">
+                <h2 class="lg:text-4xl md:text-3xl text-2xl font-bold text-heading-text mb-5">
+                    Subscribe to Our Newsletter
+                </h2>
+                <p class="text-primary-text text-lg">
+                    "Stay updated with the latest news, tips, and exclusive offers from Nord3 VPN. Subscribe to our newsletter and never miss an update!"
+                </p>
+            </div>
+
+            <!-----right content-->
+            <div class="md:w-1/2">
+                <input type="email" placeholder="Enter your email" class="border border-gray-300 rounded-lg px-4 py-2 w-full md:w-3/4 lg:w-1/2 focus:outline-none focus:ring focus:ring-blue-500 transition duration-300">
+                <button class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition duration-300 ml-4">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-----footer section------>
+<footer class="bg-[#F8F8F8]">
+    <div class="section-container">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <!------brand column-->
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <img src="./images/logo.png" alt="logo" class="h-8">
+                    <span class="text-xl font-bold text-primary" style="color: blue;">Nord3 VPN</span>
+                </div>
+                <p class="text-primary-text mb-8 text-center">
+                    Nord3 VPN is your gateway to a secure and unrestricted internet. 
+                </p>
+            <div class="flex gap-4">
+                <a href="#" class="p-2 rounded-full bg-white-500 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 duration-300">
+                    <img src="./images/facebook_5968764.png" alt="" class="size-4">
+                </a>
+                <a href="#" class="p-2 rounded-full bg-black-500 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 duration-300">
+                    <img src="./images/twitter_5968830.png" alt="" class="size-4">
+                </a>
+                <a href="#" class="p-2 rounded-full bg-white-500 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 duration-300">
+                    <img src="./images/instagram_2111463.png" alt="" class="size-4">
+                </a>
+            </div>
+            <p class="text-primary-text mt-8">
+                &copy; 
+                     Nord3 VPN <span id="date">
+                </span>
+                .All rights reserved 
+            </p>
+            </div>
+            <!--- product column ------>
+            <div>
+                <h3 class="font-medium text-lg mb:6"> Product</h3>
+                <ul class="space-y-4 text-primary-text">
+                    <li>
+                        <a href="#" class="hover:text-primary">Download</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary">Locations</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary">Servers</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+            <!------Engage------->
+            <div>
+                <h3 class="font-medium text-lg mb:6"> Engage</h3>
+                <ul class="space-y-4 text-primary-text">
+                    <li>
+                        <a href="#" class="hover:text-primary">Download</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary">Locations</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary">Servers</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-medium text-lg mb:6">Terms and Conditions</h3>
+                <ul class="space-y-4 text-primary-text">
+                    <li>
+                        <a href="#" class="hover:text-primary">Download</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-primary">Locations</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!----------js script---------------->
+<script src="./js/app.js"></script>  
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 2000, // Animation duration in milliseconds
+    once: true // Whether to animate only once or every time it comes into view
+  });
+</script>
+</body>
+</html>
+

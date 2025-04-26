@@ -1,0 +1,23 @@
+
+
+{
+  "name": "nord-3-vpn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+     "build": "tailwindcss -i ./src/input.css -o ./src/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [
+    "Nord 3 vpn"
+  ],
+  "author": "NEXTLINE TECHNOLOGIES",
+  "license": "ISC",
+  "description": "A Tailwind built site for vpn company",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.17",
+    "tailwindcss": "^4.0.17"
+  }
+}
